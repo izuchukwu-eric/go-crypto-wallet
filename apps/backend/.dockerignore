@@ -1,0 +1,12 @@
+# Binaries
+main
+
+# Go modules
+/vendor
+
+# Logs
+*.log
+
+# IDE files
+.idea
+.vscode

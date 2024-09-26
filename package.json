@@ -1,0 +1,27 @@
+{
+  "name": "izuchukwuonukwube",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "go:build": "cd apps/backend && go build -o ../../dist/backend",
+    "go:dev": "cd apps/backend && go run main.go",
+    "docker:build": "cd apps/backend && docker build -t izuchukwueric/crypdefi-backend:latest .",
+    "docker:run": "docker run -p 8080:8080 --env-file apps/backend/.env izuchukwueric/crypdefi-backend:latest"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "turbo": "^2.1.2",
+    "typescript": "^5.4.5"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "npm@10.7.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}
