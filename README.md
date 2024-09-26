@@ -42,6 +42,8 @@ npx create-turbo@latest
 
 - `docker run -p 5432:5432 -e POSTGRES_PASSWORD=your-postgres-password -d postgres`: startup postgres.
 - `cd apps/frontend`: cd into the frontend folder.
+- `npm install `: Install node_modules.
+- `npm run dev `: Run the frontend
 
 ### Function Descriptions
 
