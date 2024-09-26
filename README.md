@@ -27,11 +27,21 @@ npx create-turbo@latest
 - `GET /wallets`: Lists all wallets.
 - `POST /sign`: Signs a transaction.
 
+#### Running the backend (Go)
+
+- `npm run docker:build`: Build the backend.
+- `npm run docker:run`: Run the backend.
+
 #### Frontend (Next.js)
 
 - `POST /api/fetchBalance`: Fetches the balance of a given wallet address.
 - `POST /api/signTransaction`: Signs a transaction.
 - `POST /api/fetchTransactions`: Fetches the last 3 transactions of a given wallet address.
+
+#### Running the Frontend (Next.js)
+
+- `docker run -p 5432:5432 -e POSTGRES_PASSWORD=your-postgres-password -d postgres`: startup postgres.
+- `cd apps/frontend`: cd into the frontend folder.
 
 ### Function Descriptions
 
